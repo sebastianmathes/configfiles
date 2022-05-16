@@ -169,7 +169,7 @@ let g:netrw_altv = 1
 let g:netrw_winsize = 15
 
 " launch when entering vim
-augroup ProjectDrawer
-  autocmd!
-  autocmd VimEnter * :Vexplore
-augroup END
+"augroup ProjectDrawer
+"  autocmd!
+"  autocmd VimEnter * :Vexplore
+"augroup END
