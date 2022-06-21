@@ -173,3 +173,21 @@ let g:netrw_winsize = 15
 "  autocmd!
 "  autocmd VimEnter * :Vexplore
 "augroup END
+
+"------------------------------------------------------------
+" Plugins managed via vim-plug
+
+" Use this to setup vim-plug
+"     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+call plug#begin('~/.vim/plugged')
+
+" fzf plugin
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+" Initialize plugin system
+call plug#end()
+
+"------------------------------------------------------------
